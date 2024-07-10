@@ -1,0 +1,93 @@
+.forgot-password-container {
+  position: relative;
+  max-width: 420px;
+  /* Adjust the max-width to match the layout of the LoginRegister component */
+  width: 100%;
+  /* Ensure the container takes the full width */
+  background: transparent;
+  border: 2px solid rgba(225, 225, 225, 0.1);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: height 0.2s ease;
+  margin: 0 auto;
+  padding: 90px;
+  /* Reduced padding to decrease overall height */
+}
+
+form h2 {
+  font-size: 90px;
+  /* Reduced font size to save space */
+  text-align: center;
+  margin-bottom: 90px;
+  /* Reduced margin to save space */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  /* Reduced margin to save space */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 15px;
+  background: transparent;
+  border: 2px solid skyblue;
+  /* Changed border color to sky blue */
+  outline: none;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #333;
+}
+
+
+input[type='email']::placeholder,
+input[type='password']::placeholder {
+  color: #333;
+}
+
+.form-group input[type='password'] {
+  margin-top: 15px;
+  /* Reduced margin to save space */
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  margin-top: 10px;
+  /* Added margin-top for better spacing */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.form-group p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-group p a:hover {
+  text-decoration: underline;
+}

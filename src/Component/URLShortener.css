@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  /* background: linear-gradient(90deg, #a49fe4, #6b62ac); */
+  color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.maincontainer {
+  width: 60%; /* Increased width */
+  height: auto;
+  min-height: 450px; /* Increased min-height for vertical elongation */
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.25);
+  background: url('../Component/Assest/texture-2068283_1920.jpg'); /* Adding the background image */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: #3498db; /* Blue color for the title */
+  text-align: center;
+  font-style: poppins;
+}
+
+form label {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  color: black;
+}
+
+form input[type="text"] {
+  width: calc(100% - 40px); /* Adjusted width to account for button */
+  padding: 10px;
+  margin: auto;
+  border-radius: 20px;
+  border: 2px solid #3498db;
+  box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.25);
+}
+
+form button {
+  background-color: #fff;
+  color: #3498db;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: -20px; /* Adjusted margin to align with input */
+}
+
+form button:hover {
+  border: 2px solid #8f94fb;
+}
+
+#short-url-container {
+  margin-top: 20px;
+  position: relative; /* Add relative positioning */
+}
+
+#short-url-container p {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+
+#short-url {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#short-url a {
+  word-wrap: break-word;
+  margin-right: 10px;
+  color: black;
+}
+
+/* #copy-btn {
+  background-color: #fff;
+  color: #3498db;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-top: 1rem;
+  max-width: none; Remove max-width */
+  /* width: auto; Set width to auto or specify a value */
+  /* Adjust width to your preference */
+  /* width: 20px !important; /* Add !important to ensure this value takes precedence */
+ */
+
+#qr-code {
+  position: absolute;
+  top: 50%; /* Adjusted positioning */
+  right: 0;
+  transform: translateY(-50%); /* Center vertically */
+}
+
+#qr-code img {
+  max-width: 200px;
+  height: auto;
+  z-index: 1; /* Move the image slightly behind */
+}
+
+.logout-btn {
+  display: block;
+  margin: 20px auto 0 auto; /* Center the button */
+  padding: 5px 10px; /* Shortened padding */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  width: 80px; /* Set a fixed width */
+  text-align: center; /* Center text */
+
+}
+
+.logout-btn:hover {
+  background-color: #2980b9;
+}
+
+.credit a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+}
+
+.credit {
+  text-align: center;
+  margin-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
